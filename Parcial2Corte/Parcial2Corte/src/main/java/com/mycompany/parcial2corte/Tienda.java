@@ -16,7 +16,6 @@ public class Tienda extends javax.swing.JFrame {
      */
     public Tienda() {
         initComponents();
-        setLocationRelativeTo(null);
     }
 
     /**
@@ -31,9 +30,7 @@ public class Tienda extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        tienda_nueva = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
-        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
@@ -50,30 +47,14 @@ public class Tienda extends javax.swing.JFrame {
 
         jMenu1.setText("Tiendas");
 
-        tienda_nueva.setText("Nueva tienda");
-        tienda_nueva.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tienda_nuevaActionPerformed(evt);
-            }
-        });
-        jMenu1.add(tienda_nueva);
-
-        jMenuItem8.setText("Lista de video juegos");
-        jMenu1.add(jMenuItem8);
-
-        jMenuItem9.setText("Lista de clientes");
-        jMenu1.add(jMenuItem9);
+        jMenuItem1.setText("Crear tienda");
+        jMenu1.add(jMenuItem1);
 
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Clientes");
 
         jMenuItem2.setText("Nuevo cliente");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
-            }
-        });
         jMenu2.add(jMenuItem2);
 
         jMenuItem3.setText("Lista de clientes");
@@ -117,17 +98,6 @@ public class Tienda extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void tienda_nuevaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tienda_nuevaActionPerformed
-              new Nueva_tienda().setVisible(true);
-              dispose();
-    }//GEN-LAST:event_tienda_nuevaActionPerformed
-
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
-              new Nuevo_cliente().setVisible(true);
-              dispose();
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -170,14 +140,12 @@ public class Tienda extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JMenuItem jMenuItem9;
-    private javax.swing.JMenuItem tienda_nueva;
     // End of variables declaration//GEN-END:variables
 }
